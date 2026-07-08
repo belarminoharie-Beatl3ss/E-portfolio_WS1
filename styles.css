@@ -1,33 +1,55 @@
 *{
-    margin: 2px;
-    padding: 3px;
+    margin: 5px;
+    padding: 0px;
 }
 
 body{
     background-color: wheat;
 }
 
-.nav{
-   display: flex;
-   text-align: center;
-   margin: 10px;
-   padding: 10px;
-   background-color: white;
-   
-}
-
-.home{
+.navbar{
     display: flex;
-    background-color: rgb(44, 166, 166);
+    justify-content:space-between;
+    background-color: white;
+    font-weight: bold;
+    border-radius: 25px;
+    align-items: center;
+    position: fixed;
 }
 
-#details{
-    
+.logo {
+    display: flex;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+
 }
 
-#contact{
-    
+.navdes a{
+    font-size: 25px;
+    justify-content: center;
+    text-decoration: none;
 }
+
+.Homes{
+    padding-right: 5px;
+    padding-top: 100px;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+}
+
+.profile-img {
+    width: 50%;
+    height: 50%;
+}
+
+
+.profile-p {
+
+}
+
 
 .Project-card1{
     background-color: white;
@@ -39,4 +61,28 @@ body{
 
 .Project-card3{
     background-color: white;
+}
+
+/*========small mobile device========*/
+@media screen and (min-width:320px) and (max-width:480px){
+    .navbar {
+        width: 90vw;
+        height: 50vh;
+    }
+}
+
+/*========tablet device========*/
+@media screen and (min-width:768px) and (max-width:1024px){
+    .navbar {
+        width: 95vw;
+        height: 10vh;
+    }
+}
+
+/*========tablet device========*/
+@media screen and (min-width:1025px) and (max-width:1440px){
+    .navbar {
+        width: 100vw;
+        height: 100vh;
+    }
 }
