@@ -1,88 +1,226 @@
+/*Base design bah tawag?*/
 *{
-    margin: 5px;
+    margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
 }
 
 body{
     background-color: wheat;
 }
 
+/*===navigation nga part===*/
 .navbar{
-    display: flex;
-    justify-content:space-between;
-    background-color: white;
-    font-weight: bold;
-    border-radius: 25px;
-    align-items: center;
     position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background: white;
+    padding: 0 20px;
+    z-index: 1000;
+}
+/*===logo tong sa navbar===*/
+.logo{
+    width:45px;
+    height:45px;
+    border-radius:50%;
 }
 
-.logo {
+nav{
     display: flex;
-    width: 5rem;
-    height: 5rem;
-    border-radius: 50%;
-
+    gap: 20px;
 }
 
 .navdes a{
-    font-size: 25px;
-    justify-content: center;
     text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
 }
+/*===d.l.a.===*/
 
+/*===home nga part===*/
 .Homes{
-    padding-right: 5px;
-    padding-top: 100px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:50px;
+}
+/*===tong tapad sang short description===*/
+.profile-img img{
+    width:250px;
+    height:250px;
+    border-radius:50%;
+    object-fit:cover;
+}
+
+.profile-p{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    margin-left:40px;
+}
+
+.profile-p h1{
+    font-size:40px;
+    margin-bottom:15px;
+}
+
+.profile-p p{
+    font-size:20px;
+    margin-bottom:10px;
+}
+/*===d.l.a.===*/
+
+/*===skills welp===*/
+#Skills{
+    padding: 80px 20px;
+}
+
+#Skills h1{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.skill-skill{
     display: flex;
-    width: 100vw;
-    height: 100vh;
+    flex-wrap: wrap;
     justify-content: center;
+    gap: 20px;
+    list-style: none;
 }
 
-.profile-img {
-    width: 50%;
-    height: 50%;
-}
-
-
-.profile-p {
-
-}
-
-
-.Project-card1{
+.skill-skill li{
     background-color: white;
+    padding: 15px 25px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.2);
+    min-width: 150px;
+    text-align: center;
+}
+/*===d.l.a.===*/
+
+/*===project kapoy nko side comment===*/
+#Project{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+/*===card sang mga projects===*/
+.Project-card{
+    width:30%;
+    background:white;
+    border-radius:10px;
+    padding:15px;
+    box-shadow:2px 2px 8px rgba(0,0,0,0.2);
+    text-align:center;
+}
+/*===self explanatory nmn guro ===*/
+.Project-card img{
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 5px;
 }
 
-.Project-card2{
-    background-color: whitesmoke;
+.Project-card h2{
+    margin: 10px 0;
 }
 
-.Project-card3{
-    background-color: white;
+.Project-card p{
+    margin-bottom: 15px;
 }
 
-/*========small mobile device========*/
-@media screen and (min-width:320px) and (max-width:480px){
-    .navbar {
-        width: 90vw;
-        height: 50vh;
+.Project-card button{
+    padding: 10px 15px;
+    border: none;
+    background: #333;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.Project-card button:hover{
+    background: #555;
+}
+/*===d.l.a.===*/
+
+/*===para daw kuno mag smooth ang scroll===*/
+html{
+    scroll-behavior:smooth;
+}
+
+/*===tong divider basta muna hahaha===*/
+section{
+    padding:90px 20px;
+    min-height:100vh;
+}
+
+
+/*===laptop (sponor pls)===*/
+@media (max-width:992px){
+
+    .navbar{
+        height:64px;
+    }
+
+    .Project-card{
+        width:45%;
+    }
+
+    .logo{
+        width:55px;
+        height:55px;
     }
 }
 
-/*========tablet device========*/
-@media screen and (min-width:768px) and (max-width:1024px){
-    .navbar {
-        width: 95vw;
-        height: 10vh;
+
+/*===tablet (laptop gyapon trip ko)===*/
+@media (max-width:768px){
+
+    .Homes{
+        flex-direction:column;
+        text-align:center;
     }
+
+    .profile-p{
+        margin-left:0;
+    }
+
+    .Project-card{
+        width:45%;
+    }
+
 }
 
-/*========tablet device========*/
-@media screen and (min-width:1025px) and (max-width:1440px){
-    .navbar {
-        width: 100vw;
-        height: 100vh;
+
+/*===mobile (may ara nako pero laptop plsss)===*/
+@media (max-width:576px){
+
+    .navdes a{
+        display:block;
+        margin:8px 0;
+        font-size:18px;
     }
+
+    .Project-card{
+        width:100%;
+    }
+
+    .skill-skill li{
+        width:100%;
+    }
+
+    .logo{
+        width:45px;
+        height:45px;
+    }    
+    
 }
