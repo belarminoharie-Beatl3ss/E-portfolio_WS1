@@ -18,6 +18,7 @@
             <a href="#Skills">Skills</a>
             <a href="#Project">Project</a>
             <a href="#Contact">Contact</a>
+            <button id="theme-btn">Dark Mode</button>
         </nav>
     </div>
 </header>
@@ -27,13 +28,16 @@
     <section id="Home">
         <div class="Homes">
             <div class="profile-img">
-                <img src="https://scontent.fdvo3-1.fna.fbcdn.net/v/t39.30808-1/730949181_1042544181680448_2512811031367388367_n.jpg?stp=c17.0.535.535a_dst-jpg_tt6&cstp=mx535x535&ctp=s200x200&_nc_cat=110&ccb=1-7&_nc_sid=e99d92&_nc_eui2=AeGvcWppauJEM3NgKiGWZYt_2aut7f3drOLZq63t_d2s4m5koOcsC6zjOSPjUoD50_XWzJY7V2o5lUdefqY1kqWJ&_nc_ohc=3QB53fC1QPUQ7kNvwFcukZs&_nc_oc=Adqc-TIbHQJhogKt5Nu3Jw10FjwFGoQ4jUd4IP-aT0UKeRJMf_A04gxxws-ZbjI47g4&_nc_zt=24&_nc_ht=scontent.fdvo3-1.fna&_nc_gid=AfckQsQDfZcsMMC3ZoHtyQ&_nc_ss=7b2a8&oh=00_AQC2GF-Ah-8QaM592EG57EsL2JX0USMedRkt_WhG_XQtOQ&oe=6A5B7EF5" alt="profile">
+                <img src="data:image/jpeg;base64,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" alt="profile">
             </div>
 
             <div class="profile-p">
                 <h1>Michael Anghelo Belarmino</h1>
                 <p>BSIT_3</p>
-                <p>A student who wants to live peacfully hopefully</p>
+                <p id="intro">A student who wants to live peacfully hopefully</p>
+
+                <button id="info-btn" onclick="showInfo()">Show My Information</button>
+                 <div id="personal-info"></div>
             </div>
         </div>    
     </section>
@@ -41,11 +45,19 @@
 
 <!--Details ahh-->
     <section id="About">
-        <div>
-            <p>picture anay kunwari</p>
-        <p>A student in holy child central colleges and currently living in agan homes subdivision surallah south cotabato and also currently single.</p>
+        <div class="about">
+                <div class="about-paragraph">
+                <p>Hello im Michael Anghelo Belarmino some people call me by Harie. I am 20 years old and a information Technology (IT) student and i have a passion for software development and game development.</p> <br>
+                <p>I enjoy solving problems and finding practical solutions, which has helped me develop my analytical and critical thinking skills. Outside of academics, i spend my free time playing games not only for entertainment but also on how does the game make it worth playing or tricks that i can use to my future game development.</p> <br>
+                <p>My long-term goal is to become a game developer, where i can combine my creativity and my knowledge also my passion for gaming to create immersive and meaningful experiences for players. As i continue learning and building my skills, i look forward to developing projects that reflect my growth and dedication to the feild of game development</p> <br>
+                <p>I graduated junior and senior highschool in libertad national high school my strand is Computer system servicing</p>    
+            </div>
+            <div class="about-pic">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTHRbJU9EJ6ZFtvseFocoi-qrBvsO6d9um641VuUWPhw&s=10" alt="about" class="about-pics">
+            </div>
         </div>
     </section>
+    
 <!--d.l.a.-->
 
 <!--SKills basta powers-->
@@ -61,25 +73,26 @@
     </section>
 <!--d.l.a.-->
 
+
 <!--Project nga tapos (guro)-->
     <section id="Project">
 
     <article class="Project-card">
-        <img src="images/project1.png" alt="Office Asset System">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS831hiQGfpiTcWDATbkYC6k4rFzOYRMTY5vNlOoLfvBw&s=10" alt="Office Asset System">
         <h2>Office Asset System</h2>
         <p>A system that tracks, stores, and manages office assets.</p>
         <button>View Project</button>
     </article>
 
     <article class="Project-card">
-        <img src="images/project2.png" alt="QR Scanning System">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGja9L0eyZcTvpM1EsJZ64w682_2jx1sexb5v_F3fCbg&s=10" alt="QR Scanning System">
         <h2>QR Scanning System</h2>
         <p>A system that uses the device camera to scan QR codes.</p>
         <button>View Project</button>
     </article>
 
     <article class="Project-card">
-        <img src="images/project3.png" alt="Student Record System">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVrTUZ7uTIdKBDUR5c8aLfl9yl-vfnTqfeEe-alZmTgQ&s=10" alt="Student Record System">
         <h2>Student Record System</h2>
         <p>A simple system for storing and managing student information.</p>
         <button>View Project</button>
@@ -90,9 +103,11 @@
 
 <!--Contacts daw may mamita gid -->
     <section id="Contact">
-        <p>Email: Belarminoharie@gmail.com <br> Phone Number: 09610588329 <br> Facebook Account: Michael Belarmino</p>
-
+        <div class="contact-info">
+            <p>Email: Belarminoharie@gmail.com <br> Phone Number: 09610588329 <br> Facebook Account: Michael Belarmino</p>
+        </div>
     </section>
 <!--d.l.a.-->    
+    <script src="script.js"></script>
 </body>
 </html>
