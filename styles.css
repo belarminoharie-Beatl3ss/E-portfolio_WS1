@@ -6,7 +6,7 @@
 }
 
 body{
-    background-color: wheat;
+    background-color: whitesmoke;
 }
 
 /*===navigation nga part===*/
@@ -42,6 +42,8 @@ nav{
     font-size: 20px;
     font-weight: bold;
 }
+
+
 /*===d.l.a.===*/
 
 /*===home nga part===*/
@@ -76,6 +78,36 @@ nav{
     margin-bottom:10px;
 }
 /*===d.l.a.===*/
+
+/*===About part na hahaha===*/
+
+.about {
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:50px;
+}
+
+
+.about-pic img{
+    width:250px;
+    height:250px;
+    border-radius:50%;
+    object-fit:cover;
+}
+
+.about-paragraph p{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    margin-left:40px;
+}
+
+.about-paragraph p{
+    font-size:20px;
+    margin-bottom:10px;
+}
+
 
 /*===skills welp===*/
 #Skills{
@@ -121,6 +153,7 @@ nav{
     padding:15px;
     box-shadow:2px 2px 8px rgba(0,0,0,0.2);
     text-align:center;
+    height: fit-content;
 }
 /*===self explanatory nmn guro ===*/
 .Project-card img{
@@ -151,6 +184,15 @@ nav{
     background: #555;
 }
 /*===d.l.a.===*/
+
+/*===Contact===*/
+.contact-info{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:50px;
+}
+
 
 /*===para daw kuno mag smooth ang scroll===*/
 html{
@@ -223,4 +265,30 @@ section{
         height:45px;
     }    
     
+}
+
+/* Dark Mode */
+
+.dark-mode {
+    background-color: #222;
+    color: white;
+}
+
+.dark-mode .navbar {
+    background-color: #333;
+}
+
+.dark-mode .navdes a {
+    color: white;
+}
+
+.dark-mode .skill-skill li,
+.dark-mode .Project-card {
+    background-color: #333;
+    color: white;
+}
+
+.dark-mode .Project-card button {
+    background-color: white;
+    color: black;
 }
