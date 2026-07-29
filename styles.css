@@ -47,11 +47,17 @@ nav{
 /*===d.l.a.===*/
 
 /*===home nga part===*/
+
+#Home{
+    background-color: white;
+    padding:90px 20px;
+    height: 100%;
+}
+
 .Homes{
     display:flex;
     align-items:center;
     justify-content:center;
-    gap:50px;
 }
 /*===tong tapad sang short description===*/
 .profile-img img{
@@ -80,7 +86,16 @@ nav{
 /*===d.l.a.===*/
 
 /*===About part na hahaha===*/
-
+#About h1 {
+    justify-content: center;
+    display: flex;
+    margin-bottom: 25px;
+}
+#About{
+    background-color: #F9F8F6;
+    padding:90px 20px;
+    min-height:50vh;
+}
 .about {
     display:flex;
     align-items:center;
@@ -111,7 +126,9 @@ nav{
 
 /*===skills welp===*/
 #Skills{
-    padding: 80px 20px;
+    background:#EFE9E3;
+    padding:90px 20px;
+    min-height:50vh;;
 }
 
 #Skills h1{
@@ -138,7 +155,18 @@ nav{
 /*===d.l.a.===*/
 
 /*===project kapoy nko side comment===*/
-#Project{
+#Project {
+    background-color: #D9CFC7;
+    padding:90px 20px;
+    min-height:50vh;
+}
+
+#Project h1{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.Project-box{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -186,11 +214,30 @@ nav{
 /*===d.l.a.===*/
 
 /*===Contact===*/
+
+#Contact{
+    background-color:#C9B59C;
+    padding:90px 20px;
+    min-height:50vh;
+}
+
+#Contact h1{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
 .contact-info{
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    gap:50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.foots footer{
+    justify-content: center;
+    display: flex;
+    padding-bottom: 25px;
 }
 
 
@@ -198,13 +245,6 @@ nav{
 html{
     scroll-behavior:smooth;
 }
-
-/*===tong divider basta muna hahaha===*/
-section{
-    padding:90px 20px;
-    min-height:100vh;
-}
-
 
 /*===laptop (sponor pls)===*/
 @media (max-width:992px){
@@ -230,6 +270,7 @@ section{
     .Homes{
         flex-direction:column;
         text-align:center;
+        height: 50%;
     }
 
     .profile-p{
@@ -270,25 +311,40 @@ section{
 /* Dark Mode */
 
 .dark-mode {
-    background-color: #222;
+    background-color: #0C2B4E;
     color: white;
 }
 
-.dark-mode .navbar {
-    background-color: #333;
+.dark-mode #Home {
+    background-color: #2C3947;
 }
 
+.dark-mode #About {
+    background-color: #0C2B4E;
+}
+
+.dark-mode #Skills {
+    background-color: #1A3D64;
+}
+
+.dark-mode #Project {
+    background-color: #1D546C;
+}
+
+.dark-mode #Contact {
+    background-color: #183a49;
+}
 .dark-mode .navdes a {
     color: white;
 }
 
 .dark-mode .skill-skill li,
 .dark-mode .Project-card {
-    background-color: #333;
+    background-color: #1D546C;
     color: white;
 }
 
 .dark-mode .Project-card button {
-    background-color: white;
+    background-color: #F4F4F4;
     color: black;
 }
